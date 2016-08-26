@@ -1,7 +1,7 @@
 {
-  "name": "react-slingshot",
-  "version": "5.0.0",
-  "description": "Starter kit for creating apps with React and Redux",
+  "name": "ffviii-network",
+  "version": "0.1.0",
+  "description": "Social Network for the protagonists of Final Fantasy 8",
   "engines": {
     "npm": ">=3"
   },
@@ -26,8 +26,8 @@
     "test:watch": "npm run test -- --watch",
     "open:cover": "npm run test:cover && open coverage/index.html"
   },
-  "author": "Cory House",
-  "license": "MIT",
+  "author": "Angelo Agatino Nicolosi [angelonicolosi@yanchware.com]",
+  "license": "GPL-v3",
   "dependencies": {
     "object-assign": "4.1.0",
     "react": "15.3.0",
@@ -89,23 +89,9 @@
     "webpack-hot-middleware": "2.12.2",
     "webpack-md5-hash": "0.0.5"
   },
-  "keywords": [
-    "react",
-    "reactjs",
-    "react-router",
-    "hot",
-    "reload",
-    "hmr",
-    "live",
-    "edit",
-    "webpack",
-    "redux",
-    "flux",
-    "boilerplate",
-    "starter"
-  ],
+  "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/coryhouse/react-slingshot"
+    "url": ""
   }
 }

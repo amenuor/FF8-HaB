@@ -37,3 +37,6 @@ dist
 
 # Mac files
 .DS_Store
+
+#secrets
+.firebaserc
