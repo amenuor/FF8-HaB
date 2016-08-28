@@ -1,9 +1,9 @@
 {
-  "name": "react-redux-firebase-boilerplate",
-  "version": "1.0.0",
-  "description": "Simple boilerplate for Reactjs with Redux and Firebase",
+  "name": "ffviii-network",
+  "version": "0.1.0",
+  "description": "Social network for the protagonists of Final Fantasy 8",
   "main": "index.js",
-  "repository": "git@github.com:btomashvili/react-redux-firebase-boilerplate.git",
+  "repository": "git@github.com:amenuor/FFVIIINetwork.git",
   "scripts": {
     "dev": "webpack-dev-server --config ./webpack/webpack-dev.config.js --watch --colors",
     "build": "rm -rf dist && webpack --config ./webpack/webpack-prod.config.js --colors",
@@ -11,14 +11,15 @@
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch"
   },
-  "author": "Beka Tomashvili",
-  "license": "MIT",
+  "author": "Angelo Agatino Nicolosi [angelonicolosi@yanchware.com]",
+  "license": "GPL-V3",
   "keywords": [
     "ReactJS",
     "Redux",
     "Firebase",
     "React hot loader",
-    "React Router"
+    "React Router",
+    "Final Fantasy 8"
   ],
   "devDependencies": {
     "babel-core": "^6.2.1",
