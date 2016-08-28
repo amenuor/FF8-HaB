@@ -1,5 +1,7 @@
 import FireBaseTools from '../utils/firebase';
 import {
+  FETCH_ENTITIES,
+  //TODO: DELETE FROM HERE
   LOGIN_WITH_PROVIDER_FIREBASE,
   REGISTER_FIRABASE_USER,
   LOGIN_FIREBASE_USER,
@@ -10,6 +12,16 @@ import {
   LOGOUT_FIRABSE_USER
 } from './types';
 
+
+export function fetchEntities(loadCount){
+  const request = FireBaseTools.getEntities(loadCount);
+  return {
+    type : FETCH_ENTITIES,
+    payload : request
+  }
+}
+
+//TODO: DELETE FROM HERE
 
 export function loginWithProvider(provider){
   const request = FireBaseTools.loginWithProvider(provider);

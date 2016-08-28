@@ -7,17 +7,22 @@ import {
     fetchUserObject
 } from './localstorage';
 
-// You can remove it
-if (FIREBASE_CONFIG.apiKey.length < 1) {
-    alert("Please fill your Firebase settings to config.js ");
-}
-
 export const firebaseApp = firebase.initializeApp(FIREBASE_CONFIG);
 export const firebaseAuth = firebaseApp.auth();
 export const firebaseDb = firebaseApp.database();
-
+const lazyLoadingCount = 10;
 // FIREBASE TOOL OBJECT LITERAL
 var FireBaseTools = {
+
+    getEntities: (loadCount) => {
+      let startAt = loadCount*lazyLoadingCount+1;
+      let endAt = loadCount*lazyLoadingCount+lazyLoadingCount;
+      let data = firebaseDb.ref('entities').orderByKey().startAt(startAt.toString()).endAt(endAt.toString()).on("value",function(data2){
+        console.log(data2.val());
+      });
+    },
+
+    //TODO: DELETE FROM HERE
 
     getProvider: (provider) => {
 
@@ -95,7 +100,7 @@ var FireBaseTools = {
             };
         });
     },
-    
+
     fetchUser: () => {
 
         return new Promise((resolve, reject) => {
