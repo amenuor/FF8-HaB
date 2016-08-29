@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import FireBaseUserReducer from './firabase_reducer';
+import EntityReducer from './entity_reducer';
 
 const rootReducer = combineReducers({
-    currentUser: FireBaseUserReducer,
+    entity: EntityReducer,
 });
 
 export default rootReducer;
