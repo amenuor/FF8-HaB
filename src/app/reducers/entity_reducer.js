@@ -1,13 +1,14 @@
   import {
     FETCH_ENTITIES,
+    SET_ENTITY_SELECTED
   } from '../actions/types';
 
   export default function(state = null, action) {
       switch (action.type) {
-          case FETCH_ENTITIES:
-            console.log(action.payload);
-            return action.payload;
-          default:
-            return state;
+        case SET_ENTITY_SELECTED:
+        case FETCH_ENTITIES:
+          return action.payload;
+        default:
+          return state;
       }
   }

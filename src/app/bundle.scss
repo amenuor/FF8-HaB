@@ -1,4 +1,4 @@
-$background-color: #233a49;
+$background-color: rgb(35, 58, 73);
 $title-color: rgb(255, 255, 255);
 $subtitle-color: rgba(255, 255, 255, 0.502);
 
@@ -8,9 +8,17 @@ body {
 }
 
 .profile{
-  max-width: 200px;
+  min-height: 200px;
   display: inline-block;
-  
+  cursor: pointer;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  border-radius: 5%;
+
+  &:hover{
+    background-color:rgba(255, 255, 255, 0.1);
+  }
+
   img{
     display: block;
     width: 100px;

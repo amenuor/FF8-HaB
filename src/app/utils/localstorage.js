@@ -1,26 +1,41 @@
-let currentEntitiesKey = "currentEntities";
+const currentEntitiesKey = "currentEntities";
+const entityDetailsKey = "entityDetails";
 
-//Store entities fetched from backend locally. Fire and forget (still catch exception!)
-export function storeEntitiesLocally(entities) {
-  console.log("storing");
-  console.log(entities);
-  return new Promise((resolve, reject) => {
-    localStorage.setItem(currentEntitiesKey, JSON.stringify(entities));
-    resolve();
-  });
-}
-
-//Fetch local copy of previously stored entities
-export function currentEntitiesPromise() {
+var LocalStorageTools = {
+  //Store entities fetched from backend locally. Fire and forget (still catch exception!)
+  storeEntitiesLocally: (entities) => {
     return new Promise((resolve, reject) => {
-        let currentEntities = localStorage.getItem(currentEntitiesKey);
-        if(currentEntities)
-          resolve(JSON.parse(currentEntities));
+      localStorage.setItem(currentEntitiesKey, JSON.stringify(entities));
+      resolve();
+    });
+  },
+
+  //Fetch local copy of previously stored entities
+  currentEntitiesPromise: () => {
+      return new Promise((resolve, reject) => {
+          let currentEntities = localStorage.getItem(currentEntitiesKey);
+          if(currentEntities)
+            resolve(JSON.parse(currentEntities));
+          else reject();
+      });
+  },
+
+  storeEntityDetailsLocally: (entityId, details) => {
+    return new Promise((resolve, reject) => {
+      localStorage.setItem(entityDetailsKey + entityId, JSON.stringify(details));
+      resolve();
+    });
+  },
+
+  getEntityDetailsPromise: (entityId) => {
+    return new Promise((resolve, reject) => {
+        let entityDetails = localStorage.getItem(entityDetailsKey + entityId);
+        if(entityDetails)
+          resolve(JSON.parse(entityDetails));
         else reject();
     });
+  }
+
 }
 
-// get current user without promise
-export function currentEntities(){
-  return JSON.parse(localStorage.getItem(currentEntitiesKey));
-}
+export default LocalStorageTools;

@@ -11,6 +11,7 @@ import routes from './routes'
 
 // for bundling you styles
 import './bundle.scss';
+import './toast.scss';
 
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
