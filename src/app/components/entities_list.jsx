@@ -18,7 +18,7 @@ class EntitiesList extends Component {
         rows.push(
           <Link to={linkTo} className="navbar-brand" key={i}>
             <div className="profile grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-1-of-2 grid__col">
-              <img src={entity.image} />
+              <div className="avatar_holder"><img src={entity.image} /></div>
               <p className="name">{entity.name}</p>
               <p className="type">{entity.type}</p>
             </div>

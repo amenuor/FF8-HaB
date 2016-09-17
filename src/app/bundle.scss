@@ -1,7 +1,7 @@
 $background-color: rgb(35, 58, 73);
 $title-color: rgb(255, 255, 255);
 $subtitle-color: rgba(255, 255, 255, 0.502);
-$nav-bg-color: rgb(0, 0, 0);
+$nav-bg-color: rgba(0, 0, 0, 0.2);
 
 body {
   background-color: $background-color;
@@ -22,7 +22,7 @@ body {
     background-color:rgba(255, 255, 255, 0.1);
   }
 
-  img{
+  .avatar_holder{
     display: block;
     width: 100px;
     height: 100px;
@@ -30,11 +30,18 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    border-radius: 30%;
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+
+    img{
+      height: 100%;
+    }
+
   }
+
   p.name{
     font-size: 20px;
     font-family: "Lato";
