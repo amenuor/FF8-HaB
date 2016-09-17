@@ -12,8 +12,8 @@ export function fetchEntities(loadCount){
   }
 }
 
-export function setEntitySelected(entityId, entity){
-  const request = {...FireBaseTools.getEntityDetails(entityId), ...entity};
+export function setEntitySelected(entityId){
+  const request = FireBaseTools.getEntityDetails(entityId);
   return {
     type : SET_ENTITY_SELECTED,
     payload : request

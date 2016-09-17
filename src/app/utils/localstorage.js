@@ -20,6 +20,7 @@ var LocalStorageTools = {
       });
   },
 
+  //Store entities details fetched from backend locally. Fire and forget (still catch exception!)
   storeEntityDetailsLocally: (entityId, details) => {
     return new Promise((resolve, reject) => {
       localStorage.setItem(entityDetailsKey + entityId, JSON.stringify(details));
@@ -27,6 +28,7 @@ var LocalStorageTools = {
     });
   },
 
+  //Fetch local copy of previously stored entities details
   getEntityDetailsPromise: (entityId) => {
     return new Promise((resolve, reject) => {
         let entityDetails = localStorage.getItem(entityDetailsKey + entityId);

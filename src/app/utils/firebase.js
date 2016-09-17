@@ -20,7 +20,7 @@ var FireBaseTools = {
             let entities = data.val();
             LocalStorageTools.storeEntitiesLocally(entities).catch(function(error){
               //We have tried to store the entities locally, but the operation failed.
-              //The application keeps running (since we have the data anyway) however we log the error in the console (for now)
+              //The application keeps running (since we have the data anyway) however we log the error in the console (TODO: for now)
               console.log("Error while caching backend data.");
               console.error(error);
             });
@@ -39,7 +39,7 @@ var FireBaseTools = {
             let details = data.val();
             LocalStorageTools.storeEntityDetailsLocally(entityId, details).catch(function(error){
               //We have tried to store the entities locally, but the operation failed.
-              //The application keeps running (since we have the data anyway) however we log the error in the console (for now)
+              //The application keeps running (since we have the data anyway) however we log the error in the console (TODO: for now)
               console.log("Error while caching backend data.");
               console.error(error);
             });
