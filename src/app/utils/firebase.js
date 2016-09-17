@@ -9,9 +9,9 @@ export const firebaseAuth = firebaseApp.auth();
 export const firebaseDb = firebaseApp.database();
 const lazyLoadingCount = 10;
 
-var FireBaseTools = {
+class FireBaseTools {
 
-    getEntities: (loadCount, callback) => {
+    static getEntities(loadCount, callback) {
       return new Promise((resolve, reject) => {
         let fetchEntitiesFromBackend = function(){
           let startAt = loadCount*lazyLoadingCount;
@@ -30,9 +30,9 @@ var FireBaseTools = {
         LocalStorageTools.currentEntitiesPromise().then(function(entities){resolve(entities)}, fetchEntitiesFromBackend).catch(fetchEntitiesFromBackend);
       });
 
-    },
+    }
 
-    getEntityDetails: (entityId)=>{
+    static getEntityDetails(entityId){
       return new Promise((resolve, reject) => {
         let fetchEntitiesDetailsFromBackend = function(){
           firebaseDb.ref('entityDetails/'+entityId).on("value",function(data){
@@ -50,6 +50,6 @@ var FireBaseTools = {
       });
     }
 
-};
+}
 
 export default FireBaseTools;

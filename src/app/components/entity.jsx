@@ -9,7 +9,6 @@ class Entity extends Component {
 
   render(){
       let contents = 'NOT LOADED';
-      console.log(this);
 
       if(this.props.selectedEntityDetails)
       {
@@ -17,9 +16,13 @@ class Entity extends Component {
       }
 
       return (
-        <div>
-          {contents}
+        <div className="container">
+          <div className="grid">
+            <div className="profile grid__col--1-of-1 grid__col--m-1-of-1 grid__col--s-1-of-1 grid__col">
+            {contents}
+          </div>
         </div>
+      </div>
       );
   }
 

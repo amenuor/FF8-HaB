@@ -13,6 +13,10 @@ import routes from './routes'
 import './bundle.scss';
 import './toast.scss';
 
+// for bundling modernizr
+import './utils/modernizr.custom.js';
+
+
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
 
