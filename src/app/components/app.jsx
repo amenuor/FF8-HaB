@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router';
-import Classie from '../utils/classie';
+import Classie from '../lib/classie';
 
 class App extends Component {
 

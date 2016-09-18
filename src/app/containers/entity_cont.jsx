@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Entity from '../components/entity';
-import { setEntitySelected }  from '../actions/entity_actions';
+import { setSelectedEntity, setSelectedLevel }  from '../actions/entity_actions';
 
 const mapStateToProps = (state, ownProps) => {
   return { ...state.entity };
@@ -8,9 +8,13 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    setEntitySelected: (entityID) => {
-      dispatch(setEntitySelected(entityID))
+    setSelectedEntity: (entityID) => {
+      dispatch(setSelectedEntity(entityID))
+    },
+    setSelectedLevel: (level) => {
+      dispatch(setSelectedLevel(level))
     }
+
   };
 };
 

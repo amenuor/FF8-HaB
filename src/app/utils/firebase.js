@@ -11,7 +11,7 @@ const lazyLoadingCount = 10;
 
 class FireBaseTools {
 
-    static getEntities(loadCount, callback) {
+    static getEntities(loadCount) {
       return new Promise((resolve, reject) => {
         let fetchEntitiesFromBackend = function(){
           let startAt = loadCount*lazyLoadingCount;

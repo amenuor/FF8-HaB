@@ -12,9 +12,10 @@ import routes from './routes'
 // for bundling you styles
 import './bundle.scss';
 import './toast.scss';
+import '../../node_modules/react-input-range/scss/InputRange.scss';
 
 // for bundling modernizr
-import './utils/modernizr.custom.js';
+import './lib/modernizr.custom.js';
 
 
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
