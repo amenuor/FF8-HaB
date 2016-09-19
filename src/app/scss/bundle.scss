@@ -67,8 +67,23 @@ body {
 }
 
 .form {
-  height: 100px;
+  height: 70px;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 30px;
   width: 60%;
+}
+
+.light-label{
+  color: white;
+}
+
+.center{
+  width: 60%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.container{
+  max-width: 600px;
+  margin: 0 auto;
 }

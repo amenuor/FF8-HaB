@@ -36,7 +36,7 @@ class EntitiesList extends Component {
             style={styles.gridList}
           >
             {this.props.entities.map((tile,i) => (
-              <Link to={'/entity/' + i} className="navbar-brand" key={i}>
+              <Link to={'/entity/' + i} key={i}>
               <GridTile
                 key={i}
                 title={tile.name}

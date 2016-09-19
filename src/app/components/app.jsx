@@ -5,12 +5,10 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import AppBar from 'material-ui/AppBar';
 import IconButton from 'material-ui/IconButton';
-import IconMenu from 'material-ui/IconMenu';
-import MenuItem from 'material-ui/MenuItem';
-import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 import ActionSearch from 'material-ui/svg-icons/action/search';
 import FilterList from 'material-ui/svg-icons/content/filter-list';
 import ActionInfo from 'material-ui/svg-icons/action/info';
+import NavigationBack from 'material-ui/svg-icons/navigation/arrow-back';
 
 class App extends Component {
 
@@ -58,15 +56,26 @@ class App extends Component {
   }
 
   render() {
+    let appBar = (
+      <AppBar
+        title = {<IconButton><FilterList/></IconButton>}
+        iconElementLeft={<IconButton><ActionSearch/></IconButton>}
+        iconElementRight={<IconButton onTouchTap={()=>{this.triggerOverlay();}}><ActionInfo /></IconButton>}
+      />
+    );
+
+    if(window.location.pathname !== '' && window.location.pathname !== '/')
+      appBar = (
+        <AppBar
+          iconElementLeft={<Link to={'/'}><IconButton><NavigationBack/></IconButton></Link>}
+        />
+      );
+
     return (
       <MuiThemeProvider muiTheme={getMuiTheme()}>
-        <div>
+        <div className="container">
           <header>
-            <AppBar
-              title = {<IconButton><FilterList/></IconButton>}
-              iconElementLeft={<IconButton><ActionSearch/></IconButton>}
-              iconElementRight={<IconButton onTouchTap={()=>{this.triggerOverlay();}}><ActionInfo /></IconButton>}
-            />
+            {appBar}
           </header>
           <div>
               {this.props.children}

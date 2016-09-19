@@ -2,8 +2,9 @@ import FireBaseTools from '../utils/firebase';
 
 import {
   FETCH_ENTITIES,
-  SET_ENTITY_SELECTED,
-  SET_LEVEL_SELECTED
+  SET_SELECTED_ENTITY,
+  SET_SELECTED_LEVEL,
+  SET_SELECTED_CHART
 } from './types';
 
 export function fetchEntities(loadCount){
@@ -17,7 +18,7 @@ export function fetchEntities(loadCount){
 export function setSelectedEntity(entityId){
   const request = FireBaseTools.getEntityDetails(entityId);
   return {
-    type : SET_ENTITY_SELECTED,
+    type : SET_SELECTED_ENTITY,
     payload : request
   }
 }
@@ -25,7 +26,15 @@ export function setSelectedEntity(entityId){
 export function setSelectedLevel(level){
   const request = level;
   return {
-    type : SET_LEVEL_SELECTED,
+    type : SET_SELECTED_LEVEL,
+    payload : request
+  }
+}
+
+export function setSelectedTab(index){
+  const request = index;
+  return {
+    type : SET_SELECTED_CHART,
     payload : request
   }
 }

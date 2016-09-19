@@ -5,16 +5,25 @@ import InputRange from 'react-input-range';
 import SwipeableViews from 'react-swipeable-views';
 import {GridList, GridTile} from 'material-ui/GridList';
 import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
+import Tabs from 'material-ui/Tabs/Tabs';
+import Tab from 'material-ui/Tabs/Tab';
 
 class Entity extends Component {
 
   constructor(props){
     super(props);
     this.props.setSelectedEntity(this.props.params.entityID);
+    this.chartsNeedUpdate = true;
+  }
+
+  componentWillReceiveProps(nextProps)
+  {
+    this.chartsNeedUpdate = this.chartsNeedUpdate || (this.props.level != nextProps.level);
   }
 
   componentDidUpdate(){
-    if(this.props.selectedEntityDetails){
+    if(this.props.selectedEntityDetails && this.chartsNeedUpdate){
+      this.chartsNeedUpdate = false;
       let details = this.props.selectedEntityDetails;
       let index = parseInt(this.props.level / 10);
       let statsCtx = document.getElementById("stats_chart");
@@ -59,7 +68,7 @@ class Entity extends Component {
         }
       };
 
-      if(!this.statsChart && statsCtx)
+      if(!this.statsChart)
       {
         this.statsChart = new Chart(statsCtx, {
           type: 'polarArea',
@@ -70,7 +79,7 @@ class Entity extends Component {
         this.statsChart.config.data = this.statsData;
       }
 
-      if(!this.healthChart && statsCtx)
+      if(!this.healthChart)
       {
         this.healthChart = new Chart(healthCtx, {
           type: 'doughnut',
@@ -105,12 +114,16 @@ class Entity extends Component {
     this.props.setSelectedLevel(value);
   }
 
+  handleChangeTabs = (value) => {
+    this.props.setSelectedTab(value);
+  };
+
   render(){
     let description = "?";
 
     if(this.props.selectedEntityDetails)
     {
-      description = this.props.selectedEntityDetails.Description; //TODO: use it!
+      description = this.props.selectedEntityDetails.Description;
     }
 
     const styles = {
@@ -146,8 +159,8 @@ class Entity extends Component {
             </CardText>
           </Card>
 
-        <div>
-          Choose the level
+        <div className="light-label center">
+          Level
         </div>
         <form className="form">
           <InputRange
@@ -160,7 +173,11 @@ class Entity extends Component {
                 />
         </form>
 
-        <SwipeableViews>
+        <Tabs value={this.props.chartIndex}>
+          <Tab label="Health" value={0} onClick={this.handleChangeTabs.bind(null, 0)} />
+          <Tab label="Statistics" value={1} onClick={this.handleChangeTabs.bind(null, 1)} />
+        </Tabs>
+        <SwipeableViews index={this.props.chartIndex} onChangeIndex={this.handleChangeTabs}>
           <div style={Object.assign({}, styles.slide, styles.slide1)}>
             <canvas id="health_chart"></canvas>
           </div>
@@ -178,7 +195,8 @@ class Entity extends Component {
 Entity.propTypes = {
   setSelectedEntity: PropTypes.func.isRequired,
   setSelectedLevel: PropTypes.func.isRequired,
-  level: PropTypes.number.isRequired
+  level: PropTypes.number.isRequired,
+  chartIndex: PropTypes.number.isRequired
 };
 
 export default Entity;
