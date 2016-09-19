@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router';
 import Classie from '../lib/classie';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import AppBar from 'material-ui/AppBar';
+import IconButton from 'material-ui/IconButton';
+import IconMenu from 'material-ui/IconMenu';
+import MenuItem from 'material-ui/MenuItem';
+import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
+import ActionSearch from 'material-ui/svg-icons/action/search';
+import FilterList from 'material-ui/svg-icons/content/filter-list';
+import ActionInfo from 'material-ui/svg-icons/action/info';
 
 class App extends Component {
 
@@ -20,7 +30,7 @@ class App extends Component {
 
   }
 
-  triggerOverlay(){
+  triggerOverlay(obj){
     let overlay = document.querySelector( 'div.overlay' );
     if( Classie.has( overlay, 'open' ) ) {
 			Classie.remove( overlay, 'open' );
@@ -49,29 +59,25 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <header>
-          <div className="nav">
-            <ul>
-              <li className="left"><a href="#" onClick={() => {this.triggerOverlay()}}><i className="fa fa-info" aria-hidden="true"/></a></li>
-              <li><a href="#"><i className="fa fa-filter" aria-hidden="true"/></a></li>
-              <li className="right"><a href="#"><i className="fa fa-search" aria-hidden="true"/></a></li>
-            </ul>
+      <MuiThemeProvider muiTheme={getMuiTheme()}>
+        <div>
+          <header>
+            <AppBar
+              title = {<IconButton><FilterList/></IconButton>}
+              iconElementLeft={<IconButton><ActionSearch/></IconButton>}
+              iconElementRight={<IconButton onTouchTap={()=>{this.triggerOverlay();}}><ActionInfo /></IconButton>}
+            />
+          </header>
+          <div>
+              {this.props.children}
           </div>
-        </header>
-        <div className="container">
-            {this.props.children}
+      		<div className="overlay overlay-slidedown">
+            <div className="about">
+              sjahisuhauishuiahsuia siuahsiuahs aius aiuhsi uaisua sashauis
+            </div>
+      		</div>
         </div>
-
-    		<div className="overlay overlay-slidedown">
-    			<button type="button" className="overlay-close" onClick={() => {this.triggerOverlay()}}>Close</button>
-          <div className="about">
-            sjahisuhauishuiahsuia siuahsiuahs aius aiuhsi uaisua sashauis
-          </div>
-    		</div>
-
-
-    </div>
+      </MuiThemeProvider>
     );
   }
 }

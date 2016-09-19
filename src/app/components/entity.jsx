@@ -2,6 +2,9 @@ import React, { Component, PropTypes } from 'react';
 import Chart from 'chart.js'
 import { browserHistory } from 'react-router';
 import InputRange from 'react-input-range';
+import SwipeableViews from 'react-swipeable-views';
+import {GridList, GridTile} from 'material-ui/GridList';
+import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
 
 class Entity extends Component {
 
@@ -51,12 +54,12 @@ class Entity extends Component {
         legend: {
           position: 'bottom',
           labels: {
-            fontColor: 'rgb(255, 255, 255)',
+            fontColor: 'rgb(0, 0, 0)',
           }
         }
       };
 
-      if(!this.statsChart)
+      if(!this.statsChart && statsCtx)
       {
         this.statsChart = new Chart(statsCtx, {
           type: 'polarArea',
@@ -67,7 +70,7 @@ class Entity extends Component {
         this.statsChart.config.data = this.statsData;
       }
 
-      if(!this.healthChart)
+      if(!this.healthChart && statsCtx)
       {
         this.healthChart = new Chart(healthCtx, {
           type: 'doughnut',
@@ -103,51 +106,70 @@ class Entity extends Component {
   }
 
   render(){
-    let imgUrl = "";
-    let name = "?";
-    let type = "?";
+    let description = "?";
 
-    if(this.props.entities){
-      let generalInfo = this.props.entities[this.props.params.entityID];
-      imgUrl = generalInfo.image;
-      name = generalInfo.name;
-      type = generalInfo.type;
-
-      if(this.props.selectedEntityDetails)
-      {
-        //TODO!
-        let test = this.props.selectedEntityDetails.Description;
-      }
+    if(this.props.selectedEntityDetails)
+    {
+      description = this.props.selectedEntityDetails.Description; //TODO: use it!
     }
 
+    const styles = {
+      slide: {
+        padding: 15,
+        minHeight: 100,
+        color: '#fff',
+      },
+      slide1: {
+        background: '#FFF',
+      },
+      slide2: {
+        background: '#FFF',
+      }
+    };
+
+    if(!this.props.entities)
+      return (<div>LOADING</div>);
+
+    let currentEntity = this.props.entities[this.props.params.entityID];
     return (
-      <div className="container">
-        <div className="grid">
-          <div className="profile grid__col--2-of-2 grid__col">
-            <div className="avatar_holder"><img src={imgUrl} /></div>
-            <p className="name">{name}</p>
-            <p className="type">{type}</p>
-          </div>
-          <div className="grid__col--2-of-2 grid__col">
-            <form className="form">
-              <InputRange
-                      maxValue={100}
-                      minValue={0}
-                      step = {10}
-                      value={this.props.level}
-                      onChange={this.handleValueChange.bind(this)}
-                      onChangeComplete={this.handleValueChangeComplete.bind(this)}
-                    />
-            </form>
-          </div>
-          <div className="grid__col--1-of-2 grid__col">
+      <div>
+        <Card>
+            <CardHeader
+              title={currentEntity.name}
+              subtitle={currentEntity.type}
+              avatar={currentEntity.image}
+              actAsExpander={true}
+              showExpandableButton={true}
+            />
+            <CardText expandable={true}>
+              {description}
+            </CardText>
+          </Card>
+
+        <div>
+          Choose the level
+        </div>
+        <form className="form">
+          <InputRange
+                  maxValue={100}
+                  minValue={0}
+                  step = {10}
+                  value={this.props.level}
+                  onChange={this.handleValueChange.bind(this)}
+                  onChangeComplete={this.handleValueChangeComplete.bind(this)}
+                />
+        </form>
+
+        <SwipeableViews>
+          <div style={Object.assign({}, styles.slide, styles.slide1)}>
             <canvas id="health_chart"></canvas>
           </div>
-          <div className="grid__col--1-of-2 grid__col">
+          <div style={Object.assign({}, styles.slide, styles.slide2)}>
             <canvas id="stats_chart"></canvas>
           </div>
-        </div>
+        </SwipeableViews>
       </div>
+
     );
   }
 

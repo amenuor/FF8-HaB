@@ -1,6 +1,22 @@
 import React, { Component, PropTypes } from 'react';
 import {Link} from 'react-router';
 
+import {GridList, GridTile} from 'material-ui/GridList';
+
+const styles = {
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+  },
+  gridList: {
+    width: '100%',
+    height: '100%',
+    overflowY: 'auto',
+    marginBottom: 24,
+  },
+};
+
 class EntitiesList extends Component {
 
   constructor(props){
@@ -9,27 +25,31 @@ class EntitiesList extends Component {
   }
 
   render(){
-    let rows = [];
-    if(this.props.entities)
-    {
-      for (let i = 0; i < this.props.entities.length; i++) {
-        let entity = this.props.entities[i];
-        let linkTo = "/entity/" + i;
-        rows.push(
-          <Link to={linkTo} className="navbar-brand" key={i}>
-            <div className="profile grid__col--1-of-4 grid__col--m-1-of-3 grid__col--s-1-of-2 grid__col">
-              <div className="avatar_holder"><img src={entity.image} /></div>
-              <p className="name">{entity.name}</p>
-              <p className="type">{entity.type}</p>
-            </div>
-          </Link>
-        );
-      }
-    }
-    return (<div className="container"><div className="grid">{rows}</div></div>);
-
+    let cols = 2; //TODO: make it responsive
+    if(!this.props.entities)
+      return (<div>LOADING</div>);
+    return (
+      <div style={styles.root}>
+          <GridList
+            cellHeight={200}
+            cols={cols}
+            style={styles.gridList}
+          >
+            {this.props.entities.map((tile,i) => (
+              <Link to={'/entity/' + i} className="navbar-brand" key={i}>
+              <GridTile
+                key={i}
+                title={tile.name}
+                subtitle={<b>{tile.type}</b>}
+              >
+                <img src={tile.image} />
+              </GridTile>
+              </Link>
+            ))}
+          </GridList>
+        </div>
+    );
   }
-
 }
 
 EntitiesList.propTypes = {

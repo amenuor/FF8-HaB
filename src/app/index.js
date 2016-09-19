@@ -9,10 +9,10 @@ import App from './components/app';
 import reducers from './reducers';
 import routes from './routes'
 
+import injectTapEventPlugin from 'react-tap-event-plugin';
+
 // for bundling you styles
-import './bundle.scss';
-import './toast.scss';
-import '../../node_modules/react-input-range/scss/InputRange.scss';
+import './scss/bundle.scss';
 
 // for bundling modernizr
 import './lib/modernizr.custom.js';
@@ -20,6 +20,7 @@ import './lib/modernizr.custom.js';
 
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
+injectTapEventPlugin();
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
