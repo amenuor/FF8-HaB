@@ -63,7 +63,9 @@ class Entity extends Component {
         legend: {
           position: 'bottom',
           labels: {
+            boxWidth: 10,
             fontColor: 'rgb(0, 0, 0)',
+            padding: 5
           }
         }
       };
