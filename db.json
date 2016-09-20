@@ -132,49 +132,49 @@
     "6":{
       "Description": "Seifer has a reputation as a show off, and a bit of a snob. He, along with Raijin and Fujin, make up the Garden Disciplinary Committee. Seifer is the only other person in Garden that can use a Gunblade. He and Squall often clash, and sometimes it results in injury.",
       "Statistics":{
-        "HP":[252, 627, 1035, 1435, 1828, 2212, 2589, 2958, 3320, 3673, 4018],
-        "STR":[2, 9, 16, 22, 27, 32, 36, 40, 43, 45, 47],
-        "VIT":[1, 7, 12, 17, 21, 25, 28, 30, 32, 33, 33],
-        "MAG":[1, 7, 14, 19, 24, 29, 33, 36, 38, 40, 42],
-        "SPR":[0, 5, 9, 14, 17, 20, 22, 24, 26, 26, 27],
-        "SPD":[20, 22, 23, 25, 26, 28, 29, 31, 32, 34, 35],
-        "LUCK":[14, 15, 15, 16, 17, 17, 18, 18, 19, 20, 20]
+        "HP":[275, 812, 1400, 1980, 2553, 3117, 3674, 4223, 4765, 5298, 5823],
+        "STR":[3, 10, 17, 23, 29, 34, 38, 41, 44, 46, 48],
+        "VIT":[2, 8, 14, 19, 24, 28, 32, 34, 37, 38, 39],
+        "MAG":[2, 9, 15, 21, 26, 30, 34, 38, 41, 43, 45],
+        "SPR":[5, 10, 16, 20, 25, 28, 32, 34, 36, 37, 38],
+        "SPD":[15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45],
+        "LUCK":[12, 13, 13, 14, 15, 16, 16, 17, 18, 18, 19]
       }
     },
     "7":{
       "Description": "Almost nothing is known about Edea, outside of she inherited a sorceresses powers some time ago. She has remained hidden for many years, and has just recently resurfaced. It would appear that she is in league with the dictator Vinzer Deling, but her true motives remain unclear.",
       "Statistics":{
-        "HP":[252, 627, 1035, 1435, 1828, 2212, 2589, 2958, 3320, 3673, 4018],
-        "STR":[2, 9, 16, 22, 27, 32, 36, 40, 43, 45, 47],
-        "VIT":[1, 7, 12, 17, 21, 25, 28, 30, 32, 33, 33],
-        "MAG":[1, 7, 14, 19, 24, 29, 33, 36, 38, 40, 42],
-        "SPR":[0, 5, 9, 14, 17, 20, 22, 24, 26, 26, 27],
-        "SPD":[20, 22, 23, 25, 26, 28, 29, 31, 32, 34, 35],
-        "LUCK":[14, 15, 15, 16, 17, 17, 18, 18, 19, 20, 20]
+        "HP":[209, 566, 954, 1334, 1707, 2071, 2428, 2777, 3119, 3452, 3777],
+        "STR":[0, 6, 12, 18, 23, 27, 31, 34, 37, 39, 41],
+        "VIT":[0, 2, 5, 7, 10, 12, 14, 16, 17, 18, 20],
+        "MAG":[11, 18, 25, 31, 36, 41, 45, 48, 51, 54, 55],
+        "SPR":[8, 14, 20, 25, 30, 34, 37, 40, 42, 44, 45],
+        "SPD":[16, 18, 19, 21, 22, 24, 25, 27, 28, 30, 31],
+        "LUCK":[10, 11, 11, 12, 12, 13, 13, 14, 14, 15, 15]
       }
     },
     "8":{
       "Description": "Laguna is an eccentric man with a heart of pure gold. He is a bit on the clumsy side, and jumbles his words a lot. But his strong leaderrship, and unwavering loyalty bring him great respect. Though his biggest dream was to become a writer, he ended up doing many other things.",
       "Statistics":{
-        "HP":[252, 627, 1035, 1435, 1828, 2212, 2589, 2958, 3320, 3673, 4018],
-        "STR":[2, 9, 16, 22, 27, 32, 36, 40, 43, 45, 47],
-        "VIT":[1, 7, 12, 17, 21, 25, 28, 30, 32, 33, 33],
-        "MAG":[1, 7, 14, 19, 24, 29, 33, 36, 38, 40, 42],
-        "SPR":[0, 5, 9, 14, 17, 20, 22, 24, 26, 26, 27],
-        "SPD":[20, 22, 23, 25, 26, 28, 29, 31, 32, 34, 35],
-        "LUCK":[14, 15, 15, 16, 17, 17, 18, 18, 19, 20, 20]
+        "HP":[184, 577, 1005, 1425, 1838, 2242, 2639, 3028, 3410, 4148, 4148],
+        "STR":[2, 9, 16, 22, 28, 33, 37, 41, 44, 46, 48],
+        "VIT":[1, 8, 14, 19, 24, 28, 32, 35, 37, 39, 41],
+        "MAG":[2, 8, 15, 21, 26, 31, 35, 39, 42, 44, 46],
+        "SPR":[1, 7, 13, 18, 22, 26, 29, 32, 33, 35, 36],
+        "SPD":[22, 24, 25, 27, 28, 30, 31, 33, 34, 36, 37],
+        "LUCK":[14, 15, 15, 16, 17, 18, 18, 19, 20, 20, 21]
       }
     },
     "9":{
       "Description": "Kiros is a trusted friend of Laguna and Ward. They first met, while serving in the Galbadian army. He has a caring personality, with a sharp wit to go with it. He often times corrects Laguna's mistakes, but does not seem to mind at all.",
       "Statistics":{
-        "HP":[252, 627, 1035, 1435, 1828, 2212, 2589, 2958, 3320, 3673, 4018],
-        "STR":[2, 9, 16, 22, 27, 32, 36, 40, 43, 45, 47],
-        "VIT":[1, 7, 12, 17, 21, 25, 28, 30, 32, 33, 33],
-        "MAG":[1, 7, 14, 19, 24, 29, 33, 36, 38, 40, 42],
-        "SPR":[0, 5, 9, 14, 17, 20, 22, 24, 26, 26, 27],
-        "SPD":[20, 22, 23, 25, 26, 28, 29, 31, 32, 34, 35],
-        "LUCK":[14, 15, 15, 16, 17, 17, 18, 18, 19, 20, 20]
+        "HP":[160, 517, 905, 1285, 1658, 2022, 2379, 2728, 3070, 3403, 3728],
+        "STR":[1, 8, 14, 20, 25, 30, 34, 37, 40, 42, 43],
+        "VIT":[1, 7, 12, 16, 20, 24, 26, 28, 30, 31, 31],
+        "MAG":[2, 9, 16, 23, 28, 34, 38, 42, 45, 48, 50],
+        "SPR":[2, 8, 14, 20, 24, 29, 32, 35, 38, 40, 41],
+        "SPD":[30, 32, 34, 36, 37, 39, 41, 42, 44, 46, 48],
+        "LUCK":[15, 16, 17, 18, 18, 19, 20, 21, 22, 23, 23]
       }
     },
     "10":{

@@ -2,6 +2,8 @@
 
 ##Powered by
 
+http://finalfantasykingdom.net/
+
 https://firebase.google.com
 
 https://github.com/btomashvili/react-redux-firebase-boilerplate
