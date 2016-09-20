@@ -1,0 +1,193 @@
+{
+  "entities":{
+    "0":{
+      "image":"https://firebasestorage.googleapis.com/v0/b/ffviii-bc10b.appspot.com/o/squall.jpeg?alt=media&token=46f6d2ff-d2e5-4f49-83a3-5dd74d6ea212",
+      "name":"Squall Lionheart",
+      "type":"Character"
+    },
+    "1":{
+      "image":"https://firebasestorage.googleapis.com/v0/b/ffviii-bc10b.appspot.com/o/FF8-final-fantasy-viii-7273680-400-279.jpg?alt=media&token=2ca012ce-80c4-4d6c-8034-d35d0ae47556",
+      "name":"Rinoa Heartilly",
+      "type":"Character"
+    },
+    "2":{
+      "image":"https://firebasestorage.googleapis.com/v0/b/ffviii-bc10b.appspot.com/o/zell.jpeg?alt=media&token=b478dd68-5db6-437e-b64c-98d2b899963d",
+      "name":"Zell Dincht",
+      "type":"Character"
+    },
+    "3":{
+      "image":"https://firebasestorage.googleapis.com/v0/b/ffviii-bc10b.appspot.com/o/quistis.jpeg?alt=media&token=1fba8be6-ae61-4d38-9132-7d92ba688765",
+      "name":"Quistis Trepe",
+      "type":"Character"
+    },
+    "4":{
+      "image":"https://firebasestorage.googleapis.com/v0/b/ffviii-bc10b.appspot.com/o/selphie.jpeg?alt=media&token=1decc31a-532e-4aba-b8f6-4b26e848e2ef",
+      "name":"Selphie Tilmitt",
+      "type":"Character"
+    },
+    "5":{
+      "image":"https://firebasestorage.googleapis.com/v0/b/ffviii-bc10b.appspot.com/o/irvine_kinneas_02.JPG?alt=media&token=b1d51ee3-bcf2-4d38-ac92-4b7d130546f1",
+      "name":"Irvine Kinneas",
+      "type":"Character"
+    },
+    "6":{
+      "image":"https://firebasestorage.googleapis.com/v0/b/ffviii-bc10b.appspot.com/o/seifer.jpeg?alt=media&token=d682aabb-8dbe-4adf-9041-1a48784624b1",
+      "name":"Seifer Almasy",
+      "type":"Character"
+    },
+    "7":{
+      "image":"https://firebasestorage.googleapis.com/v0/b/ffviii-bc10b.appspot.com/o/edea.jpg?alt=media&token=fcfa8a2b-8c29-4559-bdc3-7549294b2c1e",
+      "name":"Edea Cramer",
+      "type":"Character"
+    },
+    "8":{
+      "image":"https://firebasestorage.googleapis.com/v0/b/ffviii-bc10b.appspot.com/o/laguna.jpg?alt=media&token=8cfd73f0-a5fd-43d6-979b-d851716d324c",
+      "name":"Laguna Loire",
+      "type":"Character"
+    },
+    "9":{
+      "image":"https://firebasestorage.googleapis.com/v0/b/ffviii-bc10b.appspot.com/o/kiros.jpeg?alt=media&token=e64f7b2f-512d-4da1-a8c8-b8de7fd0c0ae",
+      "name":"Kiros Seagill",
+      "type":"Character"
+    },
+    "10":{
+      "image":"https://firebasestorage.googleapis.com/v0/b/ffviii-bc10b.appspot.com/o/ward.jpeg?alt=media&token=817f0bce-313c-4e4a-8f4e-f5609f750697",
+      "name":"Ward Zabac",
+      "type":"Character"
+    }
+  },
+  "entityDetails":{
+    "0":{
+      "Description": "Squall is a student of Balamb Garden, studying to become a SeeD member. He is one of two people in the world, who can successfully wield a Gunblade. Squall has a quiet reserve, and tends to keep to himself. This makes him seem cold, and mean in the eyes of his peers. They tend to steer away from Squall, and that suits him just fine.",
+      "Statistics":{
+        "HP":[223, 616, 1044, 1464, 1877, 2281, 2678, 3067, 3449, 3822, 4187],
+        "STR":[1, 8, 15, 21, 27, 32, 36, 40, 43, 46, 47],
+        "VIT":[1, 8, 14, 19, 24, 28, 32, 35, 37, 39, 41],
+        "MAG":[2, 8, 15, 21, 27, 31, 35, 39, 42, 44, 45],
+        "SPR":[1, 7, 13, 18, 22, 26, 29, 32, 33, 35, 36],
+        "SPD":[20, 22, 24, 25, 27, 29, 30, 32, 34, 35, 37],
+        "LUCK":[15, 16, 16, 17, 18, 19, 19, 20, 21, 21, 22]
+      }
+    },
+    "1":{
+      "Description": "Rinoa is the leader of the Timber Owls resistance group, that is fighting against President Vinzer Deling. She chances upon Squall, while asking SeeD for assistance. Unlike Squall, Rinoa has a very outspoken demenor, and has a tendancy to get emotional. She will however, prove vital to the survival of her companions.",
+      "Statistics":{
+        "HP":[217, 610, 1038, 1458, 1871, 2275, 2672, 3061, 3443, 3816, 4181],
+        "STR":[1, 10, 19, 27, 35, 42, 48, 54, 59, 64, 67],
+        "VIT":[0, 5, 10, 14, 18, 21, 24, 26, 28, 30, 31],
+        "MAG":[8, 15, 22, 29, 35, 41, 46, 51, 55, 59, 63],
+        "SPR":[3, 8, 14, 19, 24, 28, 31, 34, 36, 38, 39],
+        "SPD":[20, 22, 24, 25, 27, 28, 30, 32, 33, 35, 36],
+        "LUCK":[16, 17, 17, 18, 19, 19, 20, 20, 21, 22, 22]
+      }
+    },
+    "2":{
+      "Description": "Zell is Garden's martial arts expert. He is skilled at using his fists to fight. Zell is a wild-tempered person, with just way too much energy. This with his style of reacting to others, sometimes lands him in trouble. That said, he is a loyal friend who will fight to the death for what's right.",
+      "Statistics":{
+        "HP":[252, 627, 1035, 1435, 1828, 2212, 2589, 2958, 3320, 3673, 4018],
+        "STR":[2, 9, 16, 22, 27, 32, 36, 40, 43, 45, 47],
+        "VIT":[1, 7, 12, 17, 21, 25, 28, 30, 32, 33, 33],
+        "MAG":[1, 7, 14, 19, 24, 29, 33, 36, 38, 40, 42],
+        "SPR":[0, 5, 9, 14, 17, 20, 22, 24, 26, 26, 27],
+        "SPD":[20, 22, 23, 25, 26, 28, 29, 31, 32, 34, 35],
+        "LUCK":[14, 15, 15, 16, 17, 17, 18, 18, 19, 20, 20]
+      }
+    },
+    "3":{
+      "Description": "Quistis is something of a child prodigy in the Garden. She is the youngest instructor ever, and even has something of a following called \"Trepe's group\". Her actions towards the students she teaches has a tendancy to undermind her authority, and she lacks the strictness of most of the other faculty.",
+      "Statistics":{
+        "HP":[216, 582, 980, 1370, 1753, 2127, 2494, 2853, 3205, 3548, 3883],
+        "STR":[1, 8, 15, 21, 26, 31, 36, 39, 42, 45, 46],
+        "VIT":[1, 6, 11, 16, 20, 23, 26, 28, 29, 30, 30],
+        "MAG":[1, 8, 14, 20, 25, 29, 33, 36, 39, 41, 42],
+        "SPR":[2, 8, 13, 18, 22, 26, 29, 31, 33, 34, 34],
+        "SPD":[19, 21, 22, 24, 25, 27, 28, 30, 31, 33, 34],
+        "LUCK":[14, 15, 15, 16, 17, 18, 18, 19, 20, 20, 21]
+      }
+    },
+    "4":{
+      "Description": "Selphie recently transfered from Trabia Garden in the north. There she was head of the celebrations and events. When she came to Balamb, she was all too eager to take the events there. She has a fantastic, outgoing personality, that garners her many friends. She is highly skilled with her Nunchaku, as well as special magic.",
+      "Statistics":{
+        "HP":[211, 559, 937, 1307, 1670, 2024, 2371, 2710, 3042, 3365, 3680],
+        "STR":[1, 7, 14, 20, 25, 30, 34, 38, 41, 43, 45],
+        "VIT":[1, 6, 10, 15, 18, 21, 24, 26, 27, 28, 28],
+        "MAG":[5, 11, 17, 22, 27, 32, 36, 40, 43, 46, 49],
+        "SPR":[2, 8, 13, 18, 23, 27, 30, 33, 35, 37, 38],
+        "SPD":[15, 17, 20, 21, 24, 26, 28, 30, 33, 34, 37],
+        "LUCK":[18, 19, 20, 21, 21, 22, 23, 24, 25, 26, 26]
+      }
+    },
+    "5":{
+      "Description": "Irvine is considered to be the best marksman in his Garden. He is the type of guy who'd like people to think he is a misunderstood loner. This pretense is great for him, when trying to court the ladies. But when the pressure is on, that rough, rugged look dissipates into nothing.",
+      "Statistics":{
+        "HP":[213, 579, 977, 1367, 1750, 2124, 2491, 2850, 3202, 3545, 3880],
+        "STR":[1, 8, 14, 20, 25, 30, 34, 37, 40, 43, 45],
+        "VIT":[1, 6, 12, 16, 20, 23, 26, 28, 30, 31, 31],
+        "MAG":[1, 8, 14, 20, 25, 30, 33, 36, 39, 41, 42],
+        "SPR":[0, 6, 11, 15, 19, 22, 25, 27, 28, 28, 28],
+        "SPD":[19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39],
+        "LUCK":[13, 14, 15, 15, 17, 17, 18, 19, 20, 21, 21]
+      }
+    },
+    "6":{
+      "Description": "Seifer has a reputation as a show off, and a bit of a snob. He, along with Raijin and Fujin, make up the Garden Disciplinary Committee. Seifer is the only other person in Garden that can use a Gunblade. He and Squall often clash, and sometimes it results in injury.",
+      "Statistics":{
+        "HP":[252, 627, 1035, 1435, 1828, 2212, 2589, 2958, 3320, 3673, 4018],
+        "STR":[2, 9, 16, 22, 27, 32, 36, 40, 43, 45, 47],
+        "VIT":[1, 7, 12, 17, 21, 25, 28, 30, 32, 33, 33],
+        "MAG":[1, 7, 14, 19, 24, 29, 33, 36, 38, 40, 42],
+        "SPR":[0, 5, 9, 14, 17, 20, 22, 24, 26, 26, 27],
+        "SPD":[20, 22, 23, 25, 26, 28, 29, 31, 32, 34, 35],
+        "LUCK":[14, 15, 15, 16, 17, 17, 18, 18, 19, 20, 20]
+      }
+    },
+    "7":{
+      "Description": "Almost nothing is known about Edea, outside of she inherited a sorceresses powers some time ago. She has remained hidden for many years, and has just recently resurfaced. It would appear that she is in league with the dictator Vinzer Deling, but her true motives remain unclear.",
+      "Statistics":{
+        "HP":[252, 627, 1035, 1435, 1828, 2212, 2589, 2958, 3320, 3673, 4018],
+        "STR":[2, 9, 16, 22, 27, 32, 36, 40, 43, 45, 47],
+        "VIT":[1, 7, 12, 17, 21, 25, 28, 30, 32, 33, 33],
+        "MAG":[1, 7, 14, 19, 24, 29, 33, 36, 38, 40, 42],
+        "SPR":[0, 5, 9, 14, 17, 20, 22, 24, 26, 26, 27],
+        "SPD":[20, 22, 23, 25, 26, 28, 29, 31, 32, 34, 35],
+        "LUCK":[14, 15, 15, 16, 17, 17, 18, 18, 19, 20, 20]
+      }
+    },
+    "8":{
+      "Description": "Laguna is an eccentric man with a heart of pure gold. He is a bit on the clumsy side, and jumbles his words a lot. But his strong leaderrship, and unwavering loyalty bring him great respect. Though his biggest dream was to become a writer, he ended up doing many other things.",
+      "Statistics":{
+        "HP":[252, 627, 1035, 1435, 1828, 2212, 2589, 2958, 3320, 3673, 4018],
+        "STR":[2, 9, 16, 22, 27, 32, 36, 40, 43, 45, 47],
+        "VIT":[1, 7, 12, 17, 21, 25, 28, 30, 32, 33, 33],
+        "MAG":[1, 7, 14, 19, 24, 29, 33, 36, 38, 40, 42],
+        "SPR":[0, 5, 9, 14, 17, 20, 22, 24, 26, 26, 27],
+        "SPD":[20, 22, 23, 25, 26, 28, 29, 31, 32, 34, 35],
+        "LUCK":[14, 15, 15, 16, 17, 17, 18, 18, 19, 20, 20]
+      }
+    },
+    "9":{
+      "Description": "Kiros is a trusted friend of Laguna and Ward. They first met, while serving in the Galbadian army. He has a caring personality, with a sharp wit to go with it. He often times corrects Laguna's mistakes, but does not seem to mind at all.",
+      "Statistics":{
+        "HP":[252, 627, 1035, 1435, 1828, 2212, 2589, 2958, 3320, 3673, 4018],
+        "STR":[2, 9, 16, 22, 27, 32, 36, 40, 43, 45, 47],
+        "VIT":[1, 7, 12, 17, 21, 25, 28, 30, 32, 33, 33],
+        "MAG":[1, 7, 14, 19, 24, 29, 33, 36, 38, 40, 42],
+        "SPR":[0, 5, 9, 14, 17, 20, 22, 24, 26, 26, 27],
+        "SPD":[20, 22, 23, 25, 26, 28, 29, 31, 32, 34, 35],
+        "LUCK":[14, 15, 15, 16, 17, 17, 18, 18, 19, 20, 20]
+      }
+    },
+    "10":{
+      "Description": "Ward is a huge mountain of a man. He is Laguna and Kiros' close friends, and his loyalty never wavers. He met the duo durring his time in the Galbadian army, where he suffered an accident costing him his voice. To this day, he is still working right along side his friends.",
+      "Statistics":{
+        "HP":[252, 627, 1035, 1435, 1828, 2212, 2589, 2958, 3320, 3673, 4018],
+        "STR":[2, 9, 16, 22, 27, 32, 36, 40, 43, 45, 47],
+        "VIT":[1, 7, 12, 17, 21, 25, 28, 30, 32, 33, 33],
+        "MAG":[1, 7, 14, 19, 24, 29, 33, 36, 38, 40, 42],
+        "SPR":[0, 5, 9, 14, 17, 20, 22, 24, 26, 26, 27],
+        "SPD":[20, 22, 23, 25, 26, 28, 29, 31, 32, 34, 35],
+        "LUCK":[14, 15, 15, 16, 17, 17, 18, 18, 19, 20, 20]
+      }
+    }
+  }
+}
