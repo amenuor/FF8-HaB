@@ -180,13 +180,13 @@
     "10":{
       "Description": "Ward is a huge mountain of a man. He is Laguna and Kiros' close friends, and his loyalty never wavers. He met the duo durring his time in the Galbadian army, where he suffered an accident costing him his voice. To this day, he is still working right along side his friends.",
       "Statistics":{
-        "HP":[252, 627, 1035, 1435, 1828, 2212, 2589, 2958, 3320, 3673, 4018],
-        "STR":[2, 9, 16, 22, 27, 32, 36, 40, 43, 45, 47],
-        "VIT":[1, 7, 12, 17, 21, 25, 28, 30, 32, 33, 33],
-        "MAG":[1, 7, 14, 19, 24, 29, 33, 36, 38, 40, 42],
-        "SPR":[0, 5, 9, 14, 17, 20, 22, 24, 26, 26, 27],
-        "SPD":[20, 22, 23, 25, 26, 28, 29, 31, 32, 34, 35],
-        "LUCK":[14, 15, 15, 16, 17, 17, 18, 18, 19, 20, 20]
+        "HP":[210, 657, 1145, 1625, 2098, 2562, 3019, 3468, 3910, 4768, 5298],
+        "STR":[2, 10, 18, 25, 31, 37, 42, 46, 47, 51, 56],
+        "VIT":[3, 9, 15, 20, 25, 29, 33, 37, 38, 40, 44],
+        "MAG":[2, 8, 13, 19, 23, 27, 30, 32, 34, 36, 43],
+        "SPR":[1, 6, 11, 16, 20, 23, 26, 28, 29, 30, 37],
+        "SPD":[15, 16, 18, 19, 20, 21, 23, 24, 25, 27, 42],
+        "LUCK":[10, 10, 11, 11, 12, 12, 13, 13, 13, 14, 18]
       }
     }
   }
