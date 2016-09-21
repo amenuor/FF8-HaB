@@ -26,7 +26,7 @@ class EntitiesList extends Component {
 
   render(){
     let cols = 2; //TODO: make it responsive
-    if(!this.props.entities)
+    if(!this.props.visibleEntities)
       return (<div>LOADING</div>);
     return (
       <div style={styles.root}>
@@ -35,10 +35,10 @@ class EntitiesList extends Component {
             cols={cols}
             style={styles.gridList}
           >
-            {this.props.entities.map((tile,i) => (
-              <Link to={'/entity/' + i} key={i}>
+            {this.props.visibleEntities.map((tile) => (
+              <Link to={'/entity/' + tile.id} key={tile.id}>
               <GridTile
-                key={i}
+                key={tile.id}
                 title={tile.name}
                 subtitle={<b>{tile.type}</b>}
               >

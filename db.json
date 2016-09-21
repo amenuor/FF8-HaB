@@ -3,57 +3,68 @@
     "0":{
       "image":"https://firebasestorage.googleapis.com/v0/b/ffviii-bc10b.appspot.com/o/squall.jpeg?alt=media&token=46f6d2ff-d2e5-4f49-83a3-5dd74d6ea212",
       "name":"Squall Lionheart",
-      "type":"Character"
+      "type":"Character",
+      "id":0
     },
     "1":{
       "image":"https://firebasestorage.googleapis.com/v0/b/ffviii-bc10b.appspot.com/o/FF8-final-fantasy-viii-7273680-400-279.jpg?alt=media&token=2ca012ce-80c4-4d6c-8034-d35d0ae47556",
       "name":"Rinoa Heartilly",
-      "type":"Character"
+      "type":"Character",
+      "id":1
     },
     "2":{
       "image":"https://firebasestorage.googleapis.com/v0/b/ffviii-bc10b.appspot.com/o/zell.jpeg?alt=media&token=b478dd68-5db6-437e-b64c-98d2b899963d",
       "name":"Zell Dincht",
-      "type":"Character"
+      "type":"Character",
+      "id":2
     },
     "3":{
       "image":"https://firebasestorage.googleapis.com/v0/b/ffviii-bc10b.appspot.com/o/quistis.jpeg?alt=media&token=1fba8be6-ae61-4d38-9132-7d92ba688765",
       "name":"Quistis Trepe",
-      "type":"Character"
+      "type":"Character",
+      "id":3
     },
     "4":{
       "image":"https://firebasestorage.googleapis.com/v0/b/ffviii-bc10b.appspot.com/o/selphie.jpeg?alt=media&token=1decc31a-532e-4aba-b8f6-4b26e848e2ef",
       "name":"Selphie Tilmitt",
-      "type":"Character"
+      "type":"Character",
+      "id":4
     },
     "5":{
       "image":"https://firebasestorage.googleapis.com/v0/b/ffviii-bc10b.appspot.com/o/irvine_kinneas_02.JPG?alt=media&token=b1d51ee3-bcf2-4d38-ac92-4b7d130546f1",
       "name":"Irvine Kinneas",
-      "type":"Character"
+      "type":"Character",
+      "id":5
     },
     "6":{
       "image":"https://firebasestorage.googleapis.com/v0/b/ffviii-bc10b.appspot.com/o/seifer.jpeg?alt=media&token=d682aabb-8dbe-4adf-9041-1a48784624b1",
       "name":"Seifer Almasy",
-      "type":"Character"
+      "type":"Character",
+      "id":6
     },
     "7":{
       "image":"https://firebasestorage.googleapis.com/v0/b/ffviii-bc10b.appspot.com/o/edea.jpg?alt=media&token=fcfa8a2b-8c29-4559-bdc3-7549294b2c1e",
       "name":"Edea Cramer",
-      "type":"Character"
+      "type":"Character",
+      "id":7
     },
     "8":{
       "image":"https://firebasestorage.googleapis.com/v0/b/ffviii-bc10b.appspot.com/o/laguna.jpg?alt=media&token=8cfd73f0-a5fd-43d6-979b-d851716d324c",
       "name":"Laguna Loire",
-      "type":"Character"
+      "type":"Character",
+      "id":8
     },
     "9":{
       "image":"https://firebasestorage.googleapis.com/v0/b/ffviii-bc10b.appspot.com/o/kiros.jpeg?alt=media&token=e64f7b2f-512d-4da1-a8c8-b8de7fd0c0ae",
       "name":"Kiros Seagill",
-      "type":"Character"
+      "type":"Character",
+      "id":9
     },
     "10":{
       "image":"https://firebasestorage.googleapis.com/v0/b/ffviii-bc10b.appspot.com/o/ward.jpeg?alt=media&token=817f0bce-313c-4e4a-8f4e-f5609f750697",
       "name":"Ward Zabac",
-      "type":"Character"
+      "type":"Character",
+      "id":10
     }
   },
   "entityDetails":{

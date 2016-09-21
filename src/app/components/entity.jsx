@@ -101,7 +101,7 @@ class Entity extends Component {
   }
 
   componentDidMount() {
-    if(!this.props.entities)
+    if(!this.props.visibleEntities)
     {
       browserHistory.push("/");
     }
@@ -142,10 +142,10 @@ class Entity extends Component {
       }
     };
 
-    if(!this.props.entities)
+    if(!this.props.visibleEntities)
       return (<div>LOADING</div>);
 
-    let currentEntity = this.props.entities[this.props.params.entityID];
+    let currentEntity = this.props.allEntities[this.props.params.entityID];
     return (
       <div>
         <Card>
