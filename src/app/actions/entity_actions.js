@@ -4,7 +4,8 @@ import {
   FETCH_ENTITIES,
   SET_SELECTED_ENTITY,
   SET_SELECTED_LEVEL,
-  SET_SELECTED_CHART
+  SET_SELECTED_CHART,
+  SET_FILTER_VALUE
 } from './types';
 
 export function fetchEntities(loadCount){
@@ -12,7 +13,7 @@ export function fetchEntities(loadCount){
   return {
     type : FETCH_ENTITIES,
     payload : request
-  }
+  };
 }
 
 export function setSelectedEntity(entityId){
@@ -20,7 +21,7 @@ export function setSelectedEntity(entityId){
   return {
     type : SET_SELECTED_ENTITY,
     payload : request
-  }
+  };
 }
 
 export function setSelectedLevel(level){
@@ -28,7 +29,7 @@ export function setSelectedLevel(level){
   return {
     type : SET_SELECTED_LEVEL,
     payload : request
-  }
+  };
 }
 
 export function setSelectedTab(index){
@@ -36,5 +37,13 @@ export function setSelectedTab(index){
   return {
     type : SET_SELECTED_CHART,
     payload : request
-  }
+  };
+}
+
+export function setFilterValue(value){
+  const request = value;
+  return {
+    type : SET_FILTER_VALUE,
+    payload : request
+  };
 }

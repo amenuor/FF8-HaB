@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import {Link} from 'react-router';
 import Classie from '../lib/classie';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import AppBar from 'material-ui/AppBar';
 import IconButton from 'material-ui/IconButton';
-import ActionSearch from 'material-ui/svg-icons/action/search';
+import IconMenu from 'material-ui/IconMenu';
+import MenuItem from 'material-ui/MenuItem';
 import FilterList from 'material-ui/svg-icons/content/filter-list';
 import ActionInfo from 'material-ui/svg-icons/action/info';
 import NavigationBack from 'material-ui/svg-icons/navigation/arrow-back';
@@ -58,8 +59,21 @@ class App extends Component {
   render() {
     let appBar = (
       <AppBar
-        title = {<IconButton><FilterList/></IconButton>}
-        iconElementLeft={<IconButton><ActionSearch/></IconButton>}
+        iconElementLeft={
+          <IconMenu
+            iconButtonElement={<IconButton><FilterList/></IconButton>}
+            targetOrigin={{horizontal: 'right', vertical: 'top'}}
+            anchorOrigin={{horizontal: 'right', vertical: 'top'}}
+            onChange={(event, value)=>{this.props.setFilterValue(value);}}
+            value={this.props.filterValue}
+            multiple={true}
+          >
+            <MenuItem primaryText="Characters" value="characters" />
+            <MenuItem primaryText="GFs" value="gfs" />
+            <MenuItem primaryText="Beasts" value="beasts" />
+          </IconMenu>
+        }
+
         iconElementRight={<IconButton onTouchTap={()=>{this.triggerOverlay();}}><ActionInfo /></IconButton>}
       />
     );
@@ -89,6 +103,11 @@ class App extends Component {
       </MuiThemeProvider>
     );
   }
+}
+
+App.propTypes = {
+  setFilterValue: PropTypes.func.isRequired,
+  filterValue: PropTypes.array.isRequired
 }
 
 export default App;
