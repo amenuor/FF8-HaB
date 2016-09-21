@@ -10,6 +10,8 @@ import MenuItem from 'material-ui/MenuItem';
 import FilterList from 'material-ui/svg-icons/content/filter-list';
 import ActionInfo from 'material-ui/svg-icons/action/info';
 import NavigationBack from 'material-ui/svg-icons/navigation/arrow-back';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
+
 
 class App extends Component {
 
@@ -92,7 +94,14 @@ class App extends Component {
             {appBar}
           </header>
           <div>
-              {this.props.children}
+            <ReactCSSTransitionGroup
+              component="div"
+              transitionName="page-transition"
+              transitionEnterTimeout={300}
+              transitionLeaveTimeout={300}
+            >
+              {React.cloneElement(this.props.children, {key: location.pathname})}
+            </ReactCSSTransitionGroup>
           </div>
       		<div className="overlay overlay-slidedown">
             <div className="about">
