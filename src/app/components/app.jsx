@@ -11,6 +11,7 @@ import FilterList from 'material-ui/svg-icons/content/filter-list';
 import ActionInfo from 'material-ui/svg-icons/action/info';
 import NavigationBack from 'material-ui/svg-icons/navigation/arrow-back';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
+import About from './about';
 
 
 class App extends Component {
@@ -104,9 +105,7 @@ class App extends Component {
             </ReactCSSTransitionGroup>
           </div>
       		<div className="overlay overlay-slidedown">
-            <div className="about">
-              sjahisuhauishuiahsuia siuahsiuahs aius aiuhsi uaisua sashauis
-            </div>
+            <About/>
       		</div>
         </div>
       </MuiThemeProvider>
