@@ -143,7 +143,7 @@ class Entity extends Component {
       }
     };
 
-    if(!this.props.visibleEntities)
+    if(!this.props.allEntities)
       return (<Loading/>);
 
     let currentEntity = this.props.allEntities[this.props.params.entityID];

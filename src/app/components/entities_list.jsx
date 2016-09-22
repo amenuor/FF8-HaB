@@ -19,11 +19,14 @@ const styles = {
   },
 };
 
+//This is hardcoded because firebase does not support count functionality
+const entities_number_in_tens = 2;
+
 class EntitiesList extends Component {
 
   constructor(props){
     super(props);
-    this.props.fetchEntities(0);
+    this.props.fetchEntities(entities_number_in_tens);
   }
 
   render(){

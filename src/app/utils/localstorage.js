@@ -11,8 +11,25 @@ class LocalStorageTools {
   //Store entities fetched from backend locally. Fire and forget (still catch exception!)
   static storeEntitiesLocally(entities){
     return new Promise((resolve, reject) => {
-      localStorage.setItem(LocalStorageTools.currentEntitiesKey, JSON.stringify(entities));
-      resolve();
+      let currentEntities = localStorage.getItem(LocalStorageTools.currentEntitiesKey);
+      if(currentEntities && entities)
+      {
+        currentEntities = JSON.parse(currentEntities);
+        if(!entities.length){
+          //In this case firebase does not return an array since there is the last entity
+          for(var prop in entities) {
+            currentEntities.push(entities[prop]);
+          }
+        }else{
+          //In this case firebase returns an array since there is more then one entity left
+          currentEntities.push(...entities);
+        }
+      } else {
+        currentEntities = entities;
+      }
+
+      localStorage.setItem(LocalStorageTools.currentEntitiesKey, JSON.stringify(currentEntities));
+      resolve(currentEntities);
     });
   }
 

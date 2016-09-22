@@ -8,8 +8,9 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    fetchEntities: (loadCount) => {
-      dispatch(fetchEntities(loadCount))
+    fetchEntities: (entities_number_in_tens) => {
+      for(let i = 0; i < entities_number_in_tens; i++)
+        dispatch(fetchEntities(i));
     }
   };
 };

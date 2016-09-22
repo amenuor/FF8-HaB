@@ -4,9 +4,9 @@ import {
 } from '../config';
 import LocalStorageTools from './localstorage';
 
-export const firebaseApp = firebase.initializeApp(FIREBASE_CONFIG);
-export const firebaseAuth = firebaseApp.auth();
-export const firebaseDb = firebaseApp.database();
+const firebaseApp = firebase.initializeApp(FIREBASE_CONFIG);
+const firebaseAuth = firebaseApp.auth();
+const firebaseDb = firebaseApp.database();
 const lazyLoadingCount = 10;
 
 class FireBaseTools {
@@ -18,13 +18,14 @@ class FireBaseTools {
           let endAt = loadCount*lazyLoadingCount+lazyLoadingCount-1;
           firebaseDb.ref('entities').orderByKey().startAt(startAt.toString()).endAt(endAt.toString()).on("value",function(data){
             let entities = data.val();
-            LocalStorageTools.storeEntitiesLocally(entities).catch(function(error){
-              //We have tried to store the entities locally, but the operation failed.
-              //The application keeps running (since we have the data anyway) however we log the error in the console (TODO: for now)
+            LocalStorageTools.storeEntitiesLocally(entities).then(function(allEntities){
+              resolve(allEntities);
+            }, function(error){
+              console.error(error);
+            }).catch(function(error){
               console.log("Error while caching backend data.");
               console.error(error);
             });
-            resolve(entities);
           });
         };
         LocalStorageTools.currentEntitiesPromise().then(function(entities){resolve(entities)}, fetchEntitiesFromBackend).catch(fetchEntitiesFromBackend);
