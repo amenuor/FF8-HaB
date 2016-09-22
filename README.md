@@ -21,3 +21,7 @@ http://redux.js.org/
 https://facebook.github.io/react/
 http://sass-lang.com/
 http://www.chartjs.org/
+
+http://www.flaticon.com/packs/essential-collection/4
+
+Icons made by [Madebyoliver](<a href=")http://www.flaticon.com/authors/madebyoliver) from [www.flaticon.com](http://www.flaticon.com) is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/)

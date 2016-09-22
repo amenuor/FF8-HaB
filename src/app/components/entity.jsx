@@ -7,6 +7,7 @@ import {GridList, GridTile} from 'material-ui/GridList';
 import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
 import Tabs from 'material-ui/Tabs/Tabs';
 import Tab from 'material-ui/Tabs/Tab';
+import Loading from './loading';
 
 class Entity extends Component {
 
@@ -143,7 +144,7 @@ class Entity extends Component {
     };
 
     if(!this.props.visibleEntities)
-      return (<div>LOADING</div>);
+      return (<Loading/>);
 
     let currentEntity = this.props.allEntities[this.props.params.entityID];
     return (

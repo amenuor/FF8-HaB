@@ -1,5 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import {Link} from 'react-router';
+import Loading from './loading';
+import Notification from './notification';
 
 import {GridList, GridTile} from 'material-ui/GridList';
 
@@ -27,7 +29,9 @@ class EntitiesList extends Component {
   render(){
     let cols = 2; //TODO: make it responsive
     if(!this.props.visibleEntities)
-      return (<div>LOADING</div>);
+      return (<Loading/>);
+    if(this.props.visibleEntities.length == 0)
+      return (<Notification message='Nothing to see here' type='warning'/>);
     return (
       <div style={styles.root}>
           <GridList
