@@ -48,7 +48,7 @@ class App extends Component {
 			};
 
       if( this.support.transitions ) {
-				overlay.addEventListener( transEndEventName, onEndTransitionFn );
+				overlay.addEventListener( this.transEndEventName, onEndTransitionFn );
 			}
 			else {
 				onEndTransitionFn();
