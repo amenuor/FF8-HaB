@@ -61,7 +61,9 @@ class App extends Component {
 
   render() {
     let appBar = (
-      <AppBar
+      <AppBar style={{
+          backgroundColor:'#040d1e'
+        }}
         iconElementLeft={
           <IconMenu
             iconButtonElement={<IconButton><FilterList/></IconButton>}
@@ -83,7 +85,9 @@ class App extends Component {
 
     if(window.location.pathname !== '' && window.location.pathname !== '/')
       appBar = (
-        <AppBar
+        <AppBar style={{
+            backgroundColor:'#040d1e'
+          }}
           iconElementLeft={<Link to={'/'}><IconButton><NavigationBack/></IconButton></Link>}
         />
       );

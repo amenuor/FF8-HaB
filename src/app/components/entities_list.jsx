@@ -2,11 +2,10 @@ import React, { Component, PropTypes } from 'react';
 import {Link} from 'react-router';
 import Loading from './loading';
 import Notification from './notification';
-
 import {GridList, GridTile} from 'material-ui/GridList';
 
 const styles = {
-  root: {
+    root: {
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'space-around',

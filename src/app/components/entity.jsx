@@ -148,7 +148,9 @@ class Entity extends Component {
 
     let currentEntity = this.props.allEntities[this.props.params.entityID];
     return (
-      <div>
+      <div style={{
+          backgroundColor: '#fff'
+        }}>
         <Card>
             <CardHeader
               title={currentEntity.name}
@@ -162,7 +164,7 @@ class Entity extends Component {
             </CardText>
           </Card>
 
-        <div className="light-label center">
+        <div className="center">
           Level
         </div>
         <form className="form">
@@ -177,8 +179,12 @@ class Entity extends Component {
         </form>
 
         <Tabs value={this.props.chartIndex}>
-          <Tab label="Health" value={0} onClick={this.handleChangeTabs.bind(null, 0)} />
-          <Tab label="Statistics" value={1} onClick={this.handleChangeTabs.bind(null, 1)} />
+          <Tab style={{
+              backgroundColor: '#040d1e'
+            }} label="Health" value={0} onClick={this.handleChangeTabs.bind(null, 0)} />
+          <Tab style={{
+              backgroundColor: '#040d1e'
+            }} label="Statistics" value={1} onClick={this.handleChangeTabs.bind(null, 1)} />
         </Tabs>
         <SwipeableViews index={this.props.chartIndex} onChangeIndex={this.handleChangeTabs}>
           <div style={Object.assign({}, styles.slide, styles.slide1)}>
