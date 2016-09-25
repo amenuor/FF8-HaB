@@ -42,4 +42,14 @@ jspm_packages
 
 #secrets
 .firebaserc
-src/app/config.js
+Contents/src/app/config.js
+
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
