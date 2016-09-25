@@ -22,7 +22,6 @@ Inspired by the great boilerplate from [btomashvili](https://github.com/btomashv
 - Actual images, icons, and etc. come from [deviantart](http://www.deviantart.com/), [CSSAuthor](http://www.cssauthor.com/mobile-app-ui-psd/), [FlatIcon](http://www.flaticon.com), and [FreebiesBug](http://freebiesbug.com/) more credits info at the [Credits](#credits) section.
 
 #Why Final Fantasy?
-------------
 
 I was looking for an easy way to access some info on some FF8 characters on my mobile.
 All the information I needed were out there, but they were really not presented in a mobile friendly way.
@@ -38,7 +37,6 @@ But if FF7 is the best, why making an app on FF8?
 Well... I was playing (again) FF8 when I decided to make the app :)
 
 #Credits
-------------
 
 App icon made by [Alexielios](http://alexielios.deviantart.com/art/Icon-Final-Fantasy-VIII-528510335)
 
