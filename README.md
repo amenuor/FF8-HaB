@@ -9,26 +9,17 @@ Reasons behind this project:
 
 Well, first of all I needed it :)
 Want to know more? Read the section [Why Final Fantasy](#why-final-fantasy)!
-
-Beside that, it has been some time I wanted to assess the level of splendor and magnificence reached by the open source community regarding mobile apps.
-
+Beside that, it had been some time I wanted to assess the level of splendor and magnificence reached by the open source community regarding mobile apps.
 This progressive app has been developed using few hours during few nights by using the following freely accessible resources:
 
-WebApp:
-Frontend coded in JavaScript using [ReactJS](https://facebook.github.io/react/), [Redux](http://redux.js.org/), [Sass](http://sass-lang.com/), and [Material-UI](http://www.material-ui.com/).
+-Frontend coded in JavaScript using [ReactJS](https://facebook.github.io/react/), [Redux](http://redux.js.org/), [Sass](http://sass-lang.com/), and [Material-UI](http://www.material-ui.com/).
 Inspired by the great boilerplate from [btomashvili](https://github.com/btomashvili/react-redux-firebase-boilerplate)
-
-Images and data hosted on [FireBase](https://firebase.google.com).
-
-The nice slider controller, used to select the level you are interested in, was originally engineered by [davidchin](https://github.com/davidchin/react-input-range)
-
-See those nice [charts](http://www.chartjs.org/)? Have you noticed you can [swipe](https://github.com/oliviertassinari/react-swipeable-views) from one to the other, and back?
-
-Mobile apps based on the boilerplates from nabilfreeman for [Android](https://github.com/nabilfreeman/android-webview-boilerplate) and [iOS](https://github.com/nabilfreeman/ios-universal-webview-boilerplate).
-
-Further Frontend inspiration from the great people at [Codrops](http://tympanus.net/codrops/) and [Codyhouse](http://codyhouse.co) (Truly amazing stuff!)
-
-Actual images, icons, and etc. come from [deviantart](http://www.deviantart.com/), [CSSAuthor](http://www.cssauthor.com/mobile-app-ui-psd/), [FlatIcon](http://www.flaticon.com), and [FreebiesBug](http://freebiesbug.com/) more credits info at the [Credits](#credits) section.
+-Images and data hosted on [FireBase](https://firebase.google.com).
+-The nice slider controller, used to select the level you are interested in, was originally engineered by [davidchin](https://github.com/davidchin/react-input-range)
+-See those nice [charts](http://www.chartjs.org/)? Have you noticed you can [swipe](https://github.com/oliviertassinari/react-swipeable-views) from one to the other, and back?
+-Mobile apps based on the boilerplates from nabilfreeman for [Android](https://github.com/nabilfreeman/android-webview-boilerplate) and [iOS](https://github.com/nabilfreeman/ios-universal-webview-boilerplate).
+-Further Frontend inspiration from the great people at [Codrops](http://tympanus.net/codrops/) and [Codyhouse](http://codyhouse.co) (Truly amazing stuff!)
+-Actual images, icons, and etc. come from [deviantart](http://www.deviantart.com/), [CSSAuthor](http://www.cssauthor.com/mobile-app-ui-psd/), [FlatIcon](http://www.flaticon.com), and [FreebiesBug](http://freebiesbug.com/) more credits info at the [Credits](#credits) section.
 
 #Why Final Fantasy?
 ------------
