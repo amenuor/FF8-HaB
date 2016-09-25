@@ -8,7 +8,7 @@ Reasons behind this project:
 ------------
 
 Well, first of all I needed it :)
-Want to know more? Read the section [Why Final Fantasy](#why-final-fantasy?)!
+Want to know more? Read the section [Why Final Fantasy](#why-final-fantasy)!
 
 Beside that, it has been some time I wanted to assess the level of splendor and magnificence reached by the open source community regarding mobile apps.
 
@@ -51,4 +51,4 @@ Well... I was playing (again) FF8 when I decided to make the app :)
 
 App icon made by [Alexielios](http://alexielios.deviantart.com/art/Icon-Final-Fantasy-VIII-528510335)
 
-Notification icons made by [Madebyoliver](<a href=")http://www.flaticon.com/authors/madebyoliver) from [www.flaticon.com](http://www.flaticon.com) is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/)
+Notification icons made by [Madebyoliver](http://www.flaticon.com/authors/madebyoliver) from [www.flaticon.com](http://www.flaticon.com) is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/)
