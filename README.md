@@ -20,6 +20,8 @@ Inspired by the great boilerplate from [btomashvili](https://github.com/btomashv
 - Mobile apps based on the boilerplates from nabilfreeman for [Android](https://github.com/nabilfreeman/android-webview-boilerplate) and [iOS](https://github.com/nabilfreeman/ios-universal-webview-boilerplate).
 - Further Frontend inspiration from the great people at [Codrops](http://tympanus.net/codrops/) and [Codyhouse](http://codyhouse.co) (Truly amazing stuff!)
 - Actual images, icons, and etc. come from [deviantart](http://www.deviantart.com/), [CSSAuthor](http://www.cssauthor.com/mobile-app-ui-psd/), [FlatIcon](http://www.flaticon.com), and [FreebiesBug](http://freebiesbug.com/) more credits info at the [Credits](#credits) section.
+- Fonts? [Google Fonts](https://fonts.google.com)!
+
 
 #Why Final Fantasy?
 
