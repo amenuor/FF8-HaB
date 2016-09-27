@@ -50,7 +50,7 @@
     "es6-promise": "3.3.1",
     "es6-symbol": "3.1.0",
     "express": "^4.14.0",
-    "firebase": "^3.0.5",
+    "firebase": "^3.4.1",
     "lodash": "^3.10.1",
     "material-ui": "0.15.4",
     "react": "^15.2.1",
