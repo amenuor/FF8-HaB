@@ -95,6 +95,7 @@ ul, li{
 .container{
   background-color: $background-color;
   max-width: 400px;
+  min-height: 100vh;
 }
 
 //Entities animation on content change

@@ -53,3 +53,4 @@ Contents/src/app/config.js
 /build
 /captures
 .externalNativeBuild
+*.apk

@@ -1,3 +1,10 @@
+//Polyfills
+import './lib/weakmaps.js';
+require('es6-symbol/implement');
+if (!Modernizr.promises) {
+  window.Promise = require('es6-promise').Promise;
+}
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';

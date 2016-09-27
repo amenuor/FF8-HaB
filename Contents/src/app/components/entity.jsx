@@ -134,11 +134,6 @@ class Entity extends Component {
         padding: 15,
         minHeight: 100,
         color: '#fff',
-      },
-      slide1: {
-        background: '#FFF',
-      },
-      slide2: {
         background: '#FFF',
       }
     };
@@ -187,10 +182,10 @@ class Entity extends Component {
             }} label="Statistics" value={1} onClick={this.handleChangeTabs.bind(null, 1)} />
         </Tabs>
         <SwipeableViews index={this.props.chartIndex} onChangeIndex={this.handleChangeTabs}>
-          <div style={Object.assign({}, styles.slide, styles.slide1)}>
+          <div style={styles.slide}>
             <canvas id="health_chart"></canvas>
           </div>
-          <div style={Object.assign({}, styles.slide, styles.slide2)}>
+          <div style={styles.slide}>
             <canvas id="stats_chart"></canvas>
           </div>
         </SwipeableViews>
